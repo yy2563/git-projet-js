@@ -1,0 +1,290 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header h1 {
+    font-size: 50px;
+    color: rgb(50, 100, 200);
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+header {
+    height: 15vh;
+    width: 100%;
+    background-color: rgba(159, 250, 220, 0.664);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.colors button {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.colors button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.colors {
+    background-color: rgb(236, 221, 221);
+    height: 60px;
+    width: 360px;
+    border-radius: 15px;
+    border: solid 2px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+
+}
+
+.colors button {
+    height: 50px;
+    width: 50px;
+    border-radius: 30px;
+}
+
+#red button {
+    background-color: red;
+}
+
+#blue button {
+    background-color: blue;
+}
+
+#green button {
+    background-color: green;
+}
+
+#yellow button {
+    background-color: yellow;
+}
+
+#pink button {
+    background-color: rgb(250, 57, 167);
+}
+
+#purple button {
+    background-color: purple;
+}
+
+#orange button {
+    background-color: orange;
+}
+
+#all {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+    align-items: center;
+    font-size: 25px;
+}
+
+#status {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+    font-size: 25px;
+}
+
+header h1 {
+    font-size: 50px;
+    color: rgb(110, 174, 45);
+}
+
+
+#game {
+    height: 90vh;
+    width: 400px;
+    background: linear-gradient(45deg, #f8c291, #f5cd79);
+    border-radius: 20px;
+    border: solid 3px #d35400;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.status {
+    display: flex;
+    flex-wrap: wrap;
+    height: 60px;
+    width: 60px;
+    background-color: rgb(236, 221, 221);
+    border-radius: 15px;
+    border: solid 2px;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    border: solid 2px #0e0202;
+
+}
+
+.togethere {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+
+
+}
+
+.sign {
+    height: 25px;
+    width: 25px;
+    border: solid 1px;
+    border-radius: 20px;
+}
+
+.circle {
+    height: 50px;
+    width: 50px;
+    border-radius: 30px;
+    background-color: aliceblue;
+    border: solid 2px;
+}
+
+.togethere .colors {
+    display: flex;
+    justify-content: space-evenly;
+    width: 300px;
+}
+
+#content {
+    display: grid;
+    place-content: center;
+    margin-top: 30px;
+
+
+}
+
+#back button {
+
+    height: 60px;
+    width: 150px;
+    border-radius: 30px;
+    font-size: 18px;
+    text-align: center;
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#back button:hover {
+    background: linear-gradient(45deg, #ff758c, #ff7eb3);
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+#back {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+}
+
+body {
+    position: relative;
+    height: 100vh;
+
+
+
+}
+
+.winwin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 90%;
+    max-width: 80%;
+    max-height: 80%;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    padding-bottom: 40px;
+    /* רווח נוסף לכפתור */
+    z-index: 100;
+    display: none;
+
+}
+
+.failure {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 85%;
+
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    z-index: 100;
+    display: none;
+}
+
+
+.failure img {
+    width: 80%;
+    /* או מספר פיקסלים כמו 300px */
+    width: 600px;
+    /* לא יגדל מעבר לזה */
+    height: auto;
+    border-radius: 10px;
+    /* להוספת פינות מעוגלות */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    /* אפקט צל */
+}
+
+.wf.active {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.05);
+}
+
+.newGame,
+.newGame1 {
+    position: absolute;
+    bottom: 10px;
+    /* מרחק קטן מהחלק התחתון של התמונה */
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(45deg, #ff6b6b, #ffb400);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    /* קטן יותר */
+    font-size: 14px;
+    /* קטן יותר */
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.newGame:hover,
+.newGame1:hover {
+    background: linear-gradient(45deg, #ff4757, #ffa502);
+    transform: translateX(-50%) scale(1.05);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.3);
+}

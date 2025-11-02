@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>משחק</title>
+    <script defer src="../js/game.js" defer></script>
+    <link rel="stylesheet" href="../css/game.css">
+</head>
+
+<body>
+    <header>
+        <div id="status">
+            <h3 id="success">הצלחות</h3>
+            <h3 id="failure">כשלונות</h3>
+        </div>
+        <h1>משחק בול פגיעה</h1>
+        <div id="all">
+            <h2>בחר צבע</h2>
+            <div class="colors">
+            </div>
+        </div>
+    </header>
+    <div id="content">
+        <div id="game">
+        </div>
+    </div>
+    <div id="back" onclick="window.location.href='../html/home.html'"><button>חזור</button></div>
+    <div class="winwin">
+        <img src="../IMGE/ניצחון.jfif" alt=""> 
+        <button class="newGame">משחק חדש</button>
+    </div>
+    <div class="failure">
+        <img  src="../IMGE/טעות.gif" alt=""> 
+               <button class="newGame1">משחק חדש</button>
+    </div>
+    <audio id="clickSound" src="../sund/נגמר המשחק.mp3" preload="auto"></audio>
+    <audio id="clickSound1" src="../sund/zug.mp3" preload="auto"></audio>
+    <audio id="clickSound2" src="../sund/789629__sadiquecat__keychron-k10-enter.wav" preload="auto"></audio>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <script defer src="./js/index.js"></script>
+</head>
+
+<body>
+    <div id="loginForm" class="container active">
+
+        <form>
+            <h2>התחברות</h2>
+            <input type="text" id="loginUsername" placeholder="שם משתמש" required>
+            <input type="password" id="loginPassword" placeholder="סיסמה" required>
+            <button onclick="toggleForm()">אין לך חשבון? הירשם כאן</button><br>
+            <p id="loginMessage"></p>
+        </form>
+        <button onclick="login()">התחבר</button>
+
+
+    </div>
+
+    <div id="registerForm" class="container">
+        <form>
+            <h2>הרשמה</h2>
+            <input type="text" id="regUsername" placeholder="שם משתמש" required>
+            <input type="password" id="regPassword" placeholder="סיסמה" required>
+            <input type="password" id="password1" placeholder="אימות סיסמה" required>
+            <button onclick="toggleForm()">כבר יש לך חשבון? התחבר</button><br>
+             <p id="regMessage"></p>
+
+        </form> 
+         <button onclick="register()">הירשם</button>
+
+    </div>
+
+</body>
+
+</html>

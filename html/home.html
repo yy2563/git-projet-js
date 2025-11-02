@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>דף כניסה למשחקים</title>
+    <link rel="stylesheet" href="../css/home.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="name1" class="name1">
+            שלום ל: </h1>
+
+
+        <h2>בחר משחק</h2>
+        <div class="game-grid">
+            <div class="game" onclick="window.location.href='game.html'">
+                <img src="../IMGE/לאמיתי.jfif" alt="משחק פעיל">
+                <button>משחק פעיל</button>
+            </div>
+            <div class="game" onclick="alert('המשחק בפיתוח!');">
+                <img src="../IMGE/יפה לאחד.PNG" alt="משחק בפיתוח">
+                <button>משחק 2</button>
+            </div>
+            <div class="game" onclick="alert('המשחק בפיתוח!');">
+                <img src="../IMGE/2.png" alt="משחק בפיתוח">
+                <button>משחק 2</button>
+            </div>
+            <div class="game" onclick="alert('המשחק בפיתוח!');">
+                <img src="../IMGE/scary.jpg" alt="משחק בפיתוח">
+                <button>משחק 4</button>
+            </div>
+            <div class="game" onclick="alert('המשחק בפיתוח!');">
+                <img src="../IMGE/3d-rendering-80s-retro-futuristic-scifi-seamless-loop-with-vintage-car.jpg"
+                    alt="משחק בפיתוח">
+                <button>משחק 5</button>
+            </div>
+            <div class="game" onclick="alert('המשחק בפיתוח!');">
+                <img src="../IMGE/200 (1).webp" alt="משחק בפיתוח">
+                <button>משחק 6</button>
+            </div>
+            <div class="game" onclick="alert('המשחק בפיתוח!');">
+                <img src="../IMGE/8Sdl.gif" alt="משחק בפיתוח">
+                <button>משחק 7</button>
+            </div>
+            <div class="game" onclick="alert('המשחק בפיתוח!');">
+                <img src="../IMGE/wins.webp" alt="משחק בפיתוח">
+                <button>משחק 8</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    let user = JSON.parse(localStorage.getItem("user"));
+    let name = user.user
+    const nameh = document.querySelector("#name1");
+    console.log(nameh);
+    nameh.innerHTML = nameh.innerHTML + " " + name;
+</script>
+
+</html>
